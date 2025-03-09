@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeLearn Hub - Master Programming Languages</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- GSAP and ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+    
+    <!-- Typed.js for typing animation -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    
+    <!-- Smooth Scrollbar -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.8.4/smooth-scrollbar.min.js"></script>
+    
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    
+    <!-- Vanilla Tilt -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/effects.css">
+</head>
+<body>
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <i class="fas fa-code"></i>
+            <span>CodeLearn Hub</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#languages">Languages</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resources">Resources</a></li>
+        </ul>
+        <div class="nav-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero interactive-bg">
+        <div id="particles-js"></div>
+        <div class="hero-content">
+            <h1 class="gradient-text">Master Programming Languages</h1> <br>
+            <!-- <p class="hero-description float-element">Your journey to becoming a skilled developer starts here</p> -->
+            <div class="cta-buttons">
+                <a href="#languages" class="btn primary glow-effect"><i class="fas fa-rocket"></i> Get Started</a>
+                <a href="#resources" class="btn secondary glow-effect"><i class="fas fa-book"></i> View Resources</a>
+            </div>
+        </div>
+        <div class="hero-animation">
+            <div class="laptop-container">
+                <img src="laptop.png" alt="Laptop" class="laptop-image">
+                <div class="laptop-screen">
+                    <pre><code></code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Languages Section -->
+    <section id="languages" class="languages">
+        <h2>Popular Programming Languages</h2>
+        <div class="language-grid">
+            <div class="language-card" data-language="python">
+                <i class="fab fa-python"></i>
+                <h3>Python</h3>
+                <p>Perfect for beginners and data science</p>
+                <div class="language-meta">
+                    <span><i class="fas fa-star"></i> Beginner Friendly</span>
+                    <span><i class="fas fa-chart-line"></i> High Demand</span>
+                </div>
+            </div>
+            <div class="language-card" data-language="javascript">
+                <i class="fab fa-js"></i>
+                <h3>JavaScript</h3>
+                <p>Power the web with interactive features</p>
+                <div class="language-meta">
+                    <span><i class="fas fa-globe"></i> Web Development</span>
+                    <span><i class="fas fa-mobile-alt"></i> Cross-platform</span>
+                </div>
+            </div>
+            <div class="language-card" data-language="java">
+                <i class="fab fa-java"></i>
+                <h3>Java</h3>
+                <p>Build robust enterprise applications</p>
+                <div class="language-meta">
+                    <span><i class="fas fa-building"></i> Enterprise</span>
+                    <span><i class="fas fa-shield-alt"></i> Secure</span>
+                </div>
+            </div>
+            <div class="language-card" data-language="cpp">
+                <i class="fas fa-code"></i>
+                <h3>C++</h3>
+                <p>Create high-performance applications</p>
+                <div class="language-meta">
+                    <span><i class="fas fa-tachometer-alt"></i> High Performance</span>
+                    <span><i class="fas fa-gamepad"></i> Game Dev</span>
+                </div>
+            </div>
+            <div class="language-card" data-language="csharp">
+                <i class="fab fa-microsoft"></i>
+                <h3>C#</h3>
+                <p>Develop Windows and game applications</p>
+                <div class="language-meta">
+                    <span><i class="fas fa-windows"></i> .NET Platform</span>
+                    <span><i class="fas fa-unity"></i> Unity Games</span>
+                </div>
+            </div>
+            <div class="language-card" data-language="ruby">
+                <i class="fas fa-gem"></i>
+                <h3>Ruby</h3>
+                <p>Build elegant web applications rapidly</p>
+                <div class="language-meta">
+                    <span><i class="fas fa-magic"></i> Elegant Syntax</span>
+                    <span><i class="fas fa-bolt"></i> Rapid Development</span>
+                </div>
+            </div>
+            <div class="language-card" data-language="swift">
+                <i class="fab fa-swift"></i>
+                <h3>Swift</h3>
+                <p>Create powerful iOS applications</p>
+                <div class="language-meta">
+                    <span><i class="fab fa-apple"></i> iOS Development</span>
+                    <span><i class="fas fa-mobile"></i> Mobile Apps</span>
+                </div>
+            </div>
+            <div class="language-card" data-language="go">
+                <i class="fas fa-code-branch"></i>
+                <h3>Go</h3>
+                <p>Build scalable cloud services</p>
+                <div class="language-meta">
+                    <span><i class="fas fa-cloud"></i> Cloud Native</span>
+                    <span><i class="fas fa-server"></i> Microservices</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="resources">
+        <h2>Learning Resources</h2>
+        <div class="resources-grid">
+            <div class="resource-card">
+                <i class="fas fa-book"></i>
+                <h3>Documentation</h3>
+                <p>Comprehensive guides and references</p>
+            </div>
+            <div class="resource-card">
+                <i class="fas fa-video"></i>
+                <h3>Video Tutorials</h3>
+                <p>Step-by-step video lessons</p>
+            </div>
+            <div class="resource-card">
+                <i class="fas fa-users"></i>
+                <h3>Community</h3>
+                <p>Connect with fellow learners</p>
+            </div>
+            <div class="resource-card">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Practice Projects</h3>
+                <p>Real-world coding exercises</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>CodeLearn Hub</h3>
+                <p>Empowering developers worldwide</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#languages">Languages</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit" class="btn primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 CodeLearn Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html> 
